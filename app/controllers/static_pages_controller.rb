@@ -12,7 +12,7 @@ class StaticPagesController < ApplicationController
   #just checks to see if entered password is correct, then renders the home page
   def set_auth
 	pass = params[:password]
-	if pass == "KhanAcademyRocks!"
+	if pass == "kmp_426"
 		cookies[:logged_in] = "cookie_set: 1234567890!@"
 		redirect_to action: "home"
 	else
