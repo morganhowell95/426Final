@@ -1,6 +1,7 @@
 <div class="center jumbotron textback row">
 
 	<div class="col-md-10">
+	<p id="console-title"> Text Editor </p>
 	<textarea id="editor">
 	
 	</textarea>
@@ -14,22 +15,22 @@
 		<div id="list-container" class="container">
 		<table id="whitelist" class="table table-hover">
 		  <tr>
-		  	<td>for loop</td>
+		  	<td data-key="ForStatement">for loop</td>
 		  </tr>
 		  <tr>
-		  	<td>variable declaration</td>
+		  	<td data-key="VariableDeclaration">variable declaration</td>
 		  </tr>
 		  <tr>
-		  	<td>while loop</td>
+		  	<td data-key="WhileStatement">while loop</td>
 		  </tr>
 		  <tr>
-		  	<td>switch statement</td>
+		  	<td data-key="SwitchStatement">switch statement</td>
 		  </tr>
 		  <tr>
-		  	<td>using "this"</td>
+		  	<td data-key="ThisExpression">using "this"</td>
 		  </tr>
 		  <tr>
-		  	<td>if statement</td>
+		  	<td data-key="IfStatement">if statement</td>
 		  </tr>
 		</table>
 		</div>
@@ -38,22 +39,22 @@
 		<div id="list-container" class="container">
 		<table id="blacklist" class="table table-hover">
 		  <tr>
-		  	<td>for loop</td>
+		  	<td data-key="ForStatement">for loop</td>
 		  </tr>
 		  <tr>
-		  	<td>variable declaration</td>
+		  	<td data-key="VariableDeclaration">variable declaration</td>
 		  </tr>
 		  <tr>
-		  	<td>while loop</td>
+		  	<td data-key="WhileStatement">while loop</td>
 		  </tr>
 		  <tr>
-		  	<td>switch statement</td>
+		  	<td data-key="SwitchStatement">switch statement</td>
 		  </tr>
 		  <tr>
-		  	<td>using "this"</td>
+		  	<td data-key="ThisExpression">using "this"</td>
 		  </tr>
 		  <tr>
-		  	<td>if statement</td>
+		  	<td data-key="IfStatement">if statement</td>
 		  </tr>
 		</table>
 		</div>
@@ -64,22 +65,35 @@
 </div>
 
 <div class="center row">
-	<h2 class="text-center"> -Enforce a Structure Hierarchy- </h2>
+		<div id="console-out" class="container textback">
+			<p id="structure-title" class="console-title"> Console </p>
+
+			<div class="user-feedback">
+				<p id="output" > Welcome to JS Challenge! Please select your desired layout below. Restrict and force certain keywords above.</p>
+				<p id="progress">...<p>
+
+			</div>
+		
+		</div>
+		
+</div>
+
+
+<div class="center row">
 		<div id="structuremake" class="container textback">
+			<p id="structure-title"> Enforce a Hierarchy Structure </p>
 
 			<hr>
 			<div>
 			<div class="btn-group">
-			  <button type="button" class="level-select levelselect-0 btn btn-default dropdown-toggle" data-toggle="dropdown" entered="false" data-level="0" aria-haspopup="true" aria-expanded="false">Level 0<span class="caret"></span>
-			  </button>
-			  
+			  <button type="button" class="level-select levelselect-0 btn btn-default dropdown-toggle" data-toggle="dropdown" entered="false" data-level="0" aria-haspopup="true" aria-expanded="false">Level 0 ▾</button>
 			  <ul class="dropdown-menu">
-			    <li><a>for</a></li>
-			    <li><a>if</a></li>
-			    <li><a>switch</a></li>
-			    <li><a>declare var</a></li>
-			    <li><a>while</a></li>
-			    <li><a>using "this"</a></li>
+			    <li><a data-key="ForStatement">for</a></li>
+			    <li><a data-key="IfStatement">if</a></li>
+			    <li><a data-key="SwitchStatement">switch</a></li>
+			    <li><a data-key="VariableDeclaration">declare var</a></li>
+			    <li><a data-key="WhileStatement">while</a></li>
+			    <li><a data-key="ThisExpression">using "this"</a></li>
 			  </ul>
 			</div>
 			<h2 id="keyword-describe-0" class="text-right"> 
