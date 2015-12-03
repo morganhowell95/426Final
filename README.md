@@ -1,41 +1,11 @@
-# Vitrium-Net
+	The JS-Challenge Framework is a platform in Rails that serves as a visual version control system with automated suggestions on how to improve submitted JavaScript code. The system will provide basic functionality upon submission, such as the ability to create a user account, save/edit code, and receive automated advice on how to improve the code. Improvements will be based on a list of parameter set by the user, including a white list, black list, and an enforced structure hierarchy. Using the JavaScript parser Acorn, we parse out an AST (abstract syntax tree) from  valid JavaScript code the user submits. Our APIs traverse the tree giving suggestions based on the set lists and structures the user has provided after sigining in. The final product will be deployed live on Heroku.
 
-This app serves as a base API for appending notes to patients with implanted devices. The API can be consumed with a POST request to endpoint: "/api/v1" with JSON paramaters as follows:
-
-```
-{
-    "api-key": "SDFHJkjhGRDfghjTRDFghj$%^&*9!",
-    "patient": "Tom Ford",
-    "surgeon": {
-        "name": "Selene Parekh",
-        "email":"selene.parekh@gmail.com"
-    },
-    "devices": [
-        {
-            "item": "2.5mm Stryker Screw",
-            "status": "confirmed",
-            "timestamp": "2015-08-17T00:18:55+00:00"
-        },
-        {
-            "item": "3.5mm Rotational Cuff",
-            "status": "error",
-            "timestamp": "2015-08-17T00:18:55+00:00"
-        },
-        {
-            "item": "1mm Washer Metal Weight",
-            "status": "confirmed",
-            "timestamp": "2015-08-17T00:18:55+00:00"
-        }
-    ],
-    "annotation": "This patient was seen last Friday. We need to schedule him for another appointment to review rehabilitation techniques.",
-    "hospital": "Duke University Hospital",
-    "password": "345678976#$%^&hos"
-}
-```
-
-##The following functionality will be deployed live:
-
-* saving unique patients with authentication to SQL database
-* saving multiple entries to patient tables
-* recalling entries for particular patients 
-* emailing results once a patient receives a 'completed surgery' status
+	In the future we envision an app of this nature being used beside a service such as HackerRank. The interviewer could set restrictions in the white list and black list (such as enforcing the presence of a for loop and restricting while loops) and have the final code graded not only on the output, but also on the efficiency, run time, and cleverness!
+	
+	
+	
+	Aaron, What needs to be done:
+	create a model for users to save past code
+	allow them to choose code they wrote and submitted in the past
+	let them load this code up into codemirror (the text editor)
+	then we just need to clean up the css and HTML
