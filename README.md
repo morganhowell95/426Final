@@ -9,8 +9,18 @@ In the future we envision an app of this nature being used beside a service such
 	
 	
 
-Aaron, What needs to be done:
+Aaron
+====
+What needs to be done:
 create a model for users to save past code
 allow them to choose code they wrote and submitted in the past
 let them load this code up into codemirror (the text editor)
 then we just need to clean up the css and HTML
+
+
+Nancy
+====
+
+CSS once user logs in looks janky since I reformatted it.
+Fix up the css on the editor page (right after user logs in) to look a bit cleaner.
+For instance the console title is not aligned and all the divs are misaligned.
