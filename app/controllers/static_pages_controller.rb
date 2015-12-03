@@ -1,32 +1,18 @@
 class StaticPagesController < ApplicationController
-  require 'json'
-  respond_to :json
 	
- #if the authentication cookie has been set then we can pass user on to JS Challenge, otherwise throw error
   def home
-	if cookies[:logged_in] != "cookie_set: 1234567890!@"
-		render :nothing => true, :status => 400
-	end 
   end
 
-  #just checks to see if entered password is correct, then renders the home page
-  def set_auth
-	pass = params[:password]
-	if pass == "kmp_426"
-		cookies[:logged_in] = "cookie_set: 1234567890!@"
-		redirect_to action: "home"
-	else
-		flash.now[:danger] = 'Invalid Password'
-		render 'access'
-	end
+  def portfolio
   end
 
-  #renders password page
-  def access
-
+  def bio
   end
 
-  #accepts an array representing the AST, where this will be checked agaisnt the white and black list
+  def contact
+  end
+
+   #accepts an array representing the AST, where this will be checked agaisnt the white and black list
   #In addition to w/b lists, it will be checked against an enforced structure if one is set.
   def check_js_code
 
@@ -122,4 +108,5 @@ class StaticPagesController < ApplicationController
 
 	render json: response
   end
+
 end

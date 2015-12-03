@@ -1,0 +1,216 @@
+<% provide(:title, @user.name) %>
+
+ <div class="row">
+  <aside class="col-md-4">
+    <section class="user_info">
+      <h1>
+        <%= gravatar_for @user %>
+        Hacker Name: <%= @user.name %><br>
+        Hacker ID:<b> <%= session[:user_id] %></b>
+      </h1>
+    </section>
+  </aside>
+</div> 
+
+
+<div class="center jumbotron textback row">
+
+  <div class="col-md-10">
+  <p id="console-title"> Text Editor </p>
+  <textarea id="editor">
+  
+  </textarea>
+  <div type="button" class="btn btn-default submit"> Submit </div>
+  </div>
+
+  <div class="col-md-2">
+
+    <h5> Whitelist </h5>
+
+    <div id="list-container" class="container">
+    <table id="whitelist" class="table table-hover">
+      <tr>
+        <td data-key="ForStatement">for loop</td>
+      </tr>
+      <tr>
+        <td data-key="VariableDeclaration">variable declaration</td>
+      </tr>
+      <tr>
+        <td data-key="WhileStatement">while loop</td>
+      </tr>
+      <tr>
+        <td data-key="SwitchStatement">switch statement</td>
+      </tr>
+      <tr>
+        <td data-key="ThisExpression">using "this"</td>
+      </tr>
+      <tr>
+        <td data-key="IfStatement">if statement</td>
+      </tr>
+    </table>
+    </div>
+
+    <h5> Blacklist </h5>
+    <div id="list-container" class="container">
+    <table id="blacklist" class="table table-hover">
+      <tr>
+        <td data-key="ForStatement">for loop</td>
+      </tr>
+      <tr>
+        <td data-key="VariableDeclaration">variable declaration</td>
+      </tr>
+      <tr>
+        <td data-key="WhileStatement">while loop</td>
+      </tr>
+      <tr>
+        <td data-key="SwitchStatement">switch statement</td>
+      </tr>
+      <tr>
+        <td data-key="ThisExpression">using "this"</td>
+      </tr>
+      <tr>
+        <td data-key="IfStatement">if statement</td>
+      </tr>
+    </table>
+    </div>
+
+    <div id="resetlist" type="button" class="btn btn-default submit"> Reset </div>
+  </div>
+
+</div>
+
+<div class="center row">
+    <div id="console-out" class="container textback">
+      <p id="structure-title" class="console-title"> Console </p>
+
+      <div class="user-feedback">
+        <p id="output" > Welcome to JS Challenge! Please select your desired layout below. Restrict and force certain keywords above.</p>
+        <p id="progress">...<p>
+
+      </div>
+    
+    </div>
+    
+</div>
+
+
+<div class="center row">
+    <div id="structuremake" class="container textback">
+      <p id="structure-title"> Enforce a Hierarchy Structure </p>
+
+      <hr>
+      <div>
+      <div class="btn-group">
+        <button type="button" class="level-select levelselect-0 btn btn-default dropdown-toggle" data-toggle="dropdown" entered="false" data-level="0" aria-haspopup="true" aria-expanded="false">Level 0 ▾</button>
+        <ul class="dropdown-menu">
+          <li><a data-key="ForStatement">for</a></li>
+          <li><a data-key="IfStatement">if</a></li>
+          <li><a data-key="SwitchStatement">switch</a></li>
+          <li><a data-key="VariableDeclaration">declare var</a></li>
+          <li><a data-key="WhileStatement">while</a></li>
+          <li><a data-key="ThisExpression">using "this"</a></li>
+        </ul>
+      </div>
+      <h2 id="keyword-describe-0" class="text-right"> 
+    </div>
+
+    </div>
+    <div id="resetstructure" type="button" class="btn btn-warning submit"> Reset Hierarchy Structure</div>
+    
+</div>
+
+
+<!--
+
+  TO AARON:
+
+  These are examples of how to make forms in RAILS that communicate with our DBs. If you have time
+  it would be cool if you could make it to where the user could fill out info in their profile. They can also have a rank or score based off their previously submitted JS code. That way we could move the platform to another page instead of in their profile when they sign in.
+-->
+
+
+<!--   <div class="patient-form col-md-6 col-md-offset-3">
+
+      <%= form_for(@patient) do |f| %>
+        <%= render 'shared/error_messages' %>
+        <%= f.label :name %>
+        <%= f.text_field :name, class: 'form-control' %>
+
+        <%= f.label :hospital %>
+        <%= f.text_field :hospital, class: 'form-control' %>
+
+        <%= f.submit "Add new patient", class: "btn btn-primary" %>
+      <% end %>
+  </div>
+</div>
+
+<hr>
+ -->
+
+<!-- VIEWING ALL CURRENT PATIENTS IN TABLE -->
+
+<!-- <div id="patient-describe-view" class="row">
+  <h1> Current Patients Registered </h1>
+  <h2> The following patients are registered with our database </h2>
+  <div class="patientlist">
+        <table id="patienttable" class="table table-hover">
+          <tr>
+            <th> Patient Name </th>
+            <th> Patient Number </th>
+            <th> Hospital </th>
+            <th> Last Seen </th>
+          <tr>
+          <% if @current_patients.length > 0 %>
+            <% @current_patients.each do |patient| %>
+                <tr>
+                  <th> <%= patient.name %> </th>
+                  <th class="patient-id"> <%= patient.id %> </th>
+                  <th> <%= patient.hospital %> </th>
+                  <th> <%= patient.updated_at %></th>
+                <tr>
+           <% end %>
+           </table>
+           <% else %>
+            </table>
+            <h3 style="color:red; text-align:center"> No Patients Registered! </h3>
+           <% end %>
+    </div>
+</div>
+ -->
+
+<!-- VIEWING SPECIFIC PATIENT INFORMATION -->
+<!--   <div id="specific-patient-view" class="row hidden">
+    <button id="patient-table-back" type="button" class="btn btn-primary"> Back to Patient Table</button>
+     <% @current_patients.each do |patient| %>
+          <div id="patient-view-<%=patient.id%>" class="hidden">
+              <aside class="col-md-4">
+              <section class="patient_info">
+                <h1>
+                  <%= link_to image_tag("patient-icon.png", size: "150", alt: "Rails logo")%>
+                  <br>
+                  <%= patient.name %>
+                </h1>
+              </section>
+            </aside>
+ -->
+            <!-- RESPECTIVE NOTES COLLECTED FOR EACH PATIENT THROUGH POST REQUESTS -->
+
+<!--             <p> <b> Recorded Devices: </b> <p>
+              <% if patient.device %>
+                <p> <%= patient.device %><p>
+              <% else %>
+                <p> No devices are currently recorded for this patient. </p>
+              <% end %>
+            <hr>
+
+            <p> <b> Written Annotations: </b> <p>
+              <% if patient.annotation %>
+                <p> <%= patient.annotation %><p>
+              <% else %>
+                <p> No annotations have been recorded for this patient. </p>
+              <% end %>
+            <hr>
+          </div>
+     <% end %>
+  </div> -->
+

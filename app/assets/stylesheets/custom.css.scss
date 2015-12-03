@@ -1,0 +1,504 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+
+/* COLORS */
+$light-gray: #777;
+
+@mixin box_sizing {
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:         border-box;
+}
+
+body {
+  padding-top: 60px;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+// .center {
+//   text-align: center;
+//   h1 {
+//   	margin-bottom: 10px;
+// 	}
+// }
+
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.2em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: $light-gray;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+  &:hover {
+  	color: #fff;
+  	text-decoration: none;
+	}
+}
+
+/* footer */
+
+footer {
+margin-top: 45px;
+padding-top: 5px;
+border-top: 1px solid #eaeaea;
+color: $light-gray;
+
+	a {
+		color: #555;
+
+		&:hover {
+			color: #222;
+			}
+		}
+
+	small {
+		float: left;
+		}
+
+	ul {
+  	float: right;
+  	list-style: none;
+
+  	li {
+  		float: left;
+  		margin-left: 15px;
+		}
+	}
+}
+
+/* forms */
+
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  margin-bottom: 15px;
+  @include box_sizing;
+}
+
+input {
+  height: auto !important;
+}
+
+#error_explanation {
+  color: red;
+  ul {
+    color: red;
+    margin: 0 0 30px 0;
+  }
+}
+
+.field_with_errors {
+  @extend .has-error;
+  .form-control {
+    color: $state-danger-text;
+  }
+}
+
+/* sidebar */
+
+aside {
+  section.user_info {
+    margin-top: 20px;
+  }
+  section {
+    padding: 10px 0;
+    margin-top: 20px;
+    &:first-child {
+      border: 0;
+      padding-top: 0;
+    }
+    span {
+      display: block;
+      margin-bottom: 3px;
+      line-height: 1;
+    }
+    h1 {
+      font-size: 1.4em;
+      text-align: left;
+      letter-spacing: -1px;
+      margin-bottom: 3px;
+      margin-top: 0px;
+    }
+  }
+}
+
+.gravatar {
+  float: left;
+  margin-right: 10px;
+}
+
+.gravatar_edit {
+  margin-top: 15px;
+}
+
+
+.home-description p
+{
+  font-size: 12px;
+  text-align: left;
+}
+
+.clean-code
+{
+  padding-bottom: 50px;
+  float: right;
+  margin-left: 100px;
+  margin-right: 30px;
+  margin-top: 50px;
+  vertical-align: center;
+  img
+  {
+    border-radius: 20px;
+  }
+}
+
+
+/* miscellaneous */
+
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+  @include box_sizing;
+}
+
+
+
+/*
+Styling for the actual javascript challenge framework where users can set a hierachy along with certain key 
+word restrictions 
+*/
+
+.thinnav
+{
+  height: 90px;
+}
+
+.textback
+{
+  height: 400px;
+  width: 1000px;
+  left: 0;
+  right: 0;
+  
+  padding-right: 30px;
+  margin-left: 20px;
+}
+
+.access-control
+{
+  margin-top: 60px;
+  background-color: #333333;
+  width: 120%;
+  margin-left: -90px;
+  height: 650px;
+  z-index: 100;
+}
+
+.alert
+{
+  margin-top: -130px;
+}
+
+.pass-desc
+{
+  margin-left: 437px;
+  font-size: 20px;
+  color: white;
+  padding-top: 130px;
+  width: 420px;
+  text-align: center;
+}
+
+#console-title
+{
+  margin-top: -45px;
+  margin-bottom: 17px;
+  margin-left: -65px;
+}
+
+#structure-title
+{
+  font-size: 21px;
+  font-weight: 200;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.pass-enter
+{
+  display: block;
+  margin-left: 441px;
+  margin-top: 40px;
+  width: 400px;
+  background: transparent;
+  color: white;
+  border-top: 0px solid white;
+  border-left: 0px solid white;
+  border-right: 0px solid white;
+  border-bottom: 4px solid white;
+  height: 100px;
+  font-size: 100px;
+  cursor: pointer;
+}
+
+.pass-enter:focus
+{
+  outline: none;
+}
+
+.pass-submit
+{
+  margin-top: 80px;
+  width: 400px;
+  margin-left: 441px;
+  color: white;
+  background-color: rgba(255,255,255, 0);
+  border: 2px solid white;
+
+}
+
+.pass-submit:hover
+{
+  margin-top: 80px;
+  width: 400px;
+  margin-left: 441px;
+  color: white;
+  background-color: rgba(255,255,255, .4);
+  border: 2px, solid, white;
+
+}
+
+#resetlist
+{
+  margin-bottom: 60px;
+  margin-top: -13px;
+}
+
+#list-container
+{
+  height: 100px;
+  overflow-y: scroll;
+  margin-bottom: 30px;
+  cursor: pointer;
+  border: 1px black solid;
+  border-radius: 5px;
+}
+
+#structuremake
+{
+  background-color: rgb(240,255,240);
+  margin-left: 40px;
+  margin-bottom: 60px;
+  margin-top: 0;
+  position: relative;
+  height: 500px;
+}
+
+
+#console-out
+{
+  background-color: rgba(50,50,50, .03);
+  margin-left: 35px;
+  margin-bottom: 60px;
+  margin-top: -30px;
+  border: 1px dashed black;
+  height: 100px;
+  border-top: none;
+
+  .console-title
+  {
+    float: left;
+    text-align: left;
+    margin-left: -35px;
+    margin-bottom: 50px;
+    padding: 0;
+    margin-top: -50px;
+  }
+
+  .user-feedback
+  {
+
+    height: 100px;
+    margin-left: 200px;
+    padding-top: -50px;
+    margin-top: -50px;
+
+    #output
+    {
+      font-family: "Courier New", Courier, monospace;
+      font-size: 12px;
+      margin-left: 50px;
+      vertical-align: top;
+      margin-top: 70px;
+      width: 700px;
+      position: absolute;
+    }
+
+    #progress
+    {
+      font-family: "Courier New", Courier, monospace;
+      font-size: 15px;
+      left: 15px;
+      bottom: 50px;
+      text-align: left;
+      z-index: 100;
+      float: left;
+      left: 0;
+      margin-left: -234px;
+      margin-top: 20px;
+    }
+  }
+}
+
+
+.levelselect-0
+{
+  position: absolute;
+  left: 100px;
+}
+
+.levelselect-1
+{
+  
+  left: 200px;
+  position: absolute;
+}
+
+.levelselect-2
+{
+  left: 300px;
+  position: absolute;
+}
+
+.levelselect-3
+{
+  left: 400px;
+  position: absolute;
+}
+
+.levelselect-4
+{
+  left: 500px;
+  position: absolute;
+  overflow-x: scroll;
+}
+
+#keyword-describe-0
+{
+  position: absolute;
+  padding-left: 120px;
+  display: inline-flex;
+}
+
+#keyword-describe-1
+{
+  position: absolute;
+  padding-left: 220px;
+  display: inline-flex;
+}
+
+#keyword-describe-2
+{
+  position: absolute;
+  padding-left: 320px;
+  display: inline-flex;
+}
+
+#keyword-describe-3
+{
+  position: absolute;
+  padding-left: 420px;
+  display: inline-flex;
+}
+
+#keyword-describe-4
+{
+  position: absolute;
+  padding-left: 520px;
+  display: inline-flex;
+}
+.logo
+{
+  top: 0;
+  display: inline;
+  z-index: 10;
+  position: absolute;
+  right: 23px;
+  height: 93px;
+}
+
+.submit
+{
+  margin-top: 5px;
+  float: right;
+}
+
+#logo
+{
+  color: white;
+  font-size: 30px;
+}
+
+#subtitle
+{
+  color: white;
+}
+
+#selected
+{
+  background-color: #6495ED;
+}
+
+#resetstructure
+{
+  width: 1000px;
+  margin-left: 40px;
+  position: absolute;
+  margin-top: -70px;
+  margin-bottom: 40px;
+
+}
+#editor
+{
+  padding-left: -50px;
+}
+

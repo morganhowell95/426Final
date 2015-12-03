@@ -1,107 +1,24 @@
-<div class="center jumbotron textback row">
+<div class="center jumbotron">
+  <h1>Final Project for COMP426</h1>
 
-	<div class="col-md-10">
-	<p id="console-title"> Text Editor </p>
-	<textarea id="editor">
-	
-	</textarea>
-	<div type="button" class="btn btn-default submit"> Submit </div>
-	</div>
+  <h2>
+    Presented to COMP426 by Morgan Howell, Nancy Gao, and Aaron Mays.
+  </h2>
 
-	<div class="col-md-2">
-
-		<h5> Whitelist </h5>
-
-		<div id="list-container" class="container">
-		<table id="whitelist" class="table table-hover">
-		  <tr>
-		  	<td data-key="ForStatement">for loop</td>
-		  </tr>
-		  <tr>
-		  	<td data-key="VariableDeclaration">variable declaration</td>
-		  </tr>
-		  <tr>
-		  	<td data-key="WhileStatement">while loop</td>
-		  </tr>
-		  <tr>
-		  	<td data-key="SwitchStatement">switch statement</td>
-		  </tr>
-		  <tr>
-		  	<td data-key="ThisExpression">using "this"</td>
-		  </tr>
-		  <tr>
-		  	<td data-key="IfStatement">if statement</td>
-		  </tr>
-		</table>
-		</div>
-
-		<h5> Blacklist </h5>
-		<div id="list-container" class="container">
-		<table id="blacklist" class="table table-hover">
-		  <tr>
-		  	<td data-key="ForStatement">for loop</td>
-		  </tr>
-		  <tr>
-		  	<td data-key="VariableDeclaration">variable declaration</td>
-		  </tr>
-		  <tr>
-		  	<td data-key="WhileStatement">while loop</td>
-		  </tr>
-		  <tr>
-		  	<td data-key="SwitchStatement">switch statement</td>
-		  </tr>
-		  <tr>
-		  	<td data-key="ThisExpression">using "this"</td>
-		  </tr>
-		  <tr>
-		  	<td data-key="IfStatement">if statement</td>
-		  </tr>
-		</table>
-		</div>
-
-		<div id="resetlist" type="button" class="btn btn-default submit"> Reset </div>
-	</div>
-
-</div>
-
-<div class="center row">
-		<div id="console-out" class="container textback">
-			<p id="structure-title" class="console-title"> Console </p>
-
-			<div class="user-feedback">
-				<p id="output" > Welcome to JS Challenge! Please select your desired layout below. Restrict and force certain keywords above.</p>
-				<p id="progress">...<p>
-
-			</div>
-		
-		</div>
-		
+  <%= link_to "Register as a New User", signup_path, class: "btn btn-lg btn-primary" %>
 </div>
 
 
-<div class="center row">
-		<div id="structuremake" class="container textback">
-			<p id="structure-title"> Enforce a Hierarchy Structure </p>
+<%= link_to image_tag("clean-code.png", height: '200', alt: "clean code saves lives"), "#" ,class: "clean-code" %>
 
-			<hr>
-			<div>
-			<div class="btn-group">
-			  <button type="button" class="level-select levelselect-0 btn btn-default dropdown-toggle" data-toggle="dropdown" entered="false" data-level="0" aria-haspopup="true" aria-expanded="false">Level 0 ▾</button>
-			  <ul class="dropdown-menu">
-			    <li><a data-key="ForStatement">for</a></li>
-			    <li><a data-key="IfStatement">if</a></li>
-			    <li><a data-key="SwitchStatement">switch</a></li>
-			    <li><a data-key="VariableDeclaration">declare var</a></li>
-			    <li><a data-key="WhileStatement">while</a></li>
-			    <li><a data-key="ThisExpression">using "this"</a></li>
-			  </ul>
-			</div>
-			<h2 id="keyword-describe-0" class="text-right"> 
-		</div>
 
-		</div>
-		<div id="resetstructure" type="button" class="btn btn-warning submit"> Reset Hierarchy Structure</div>
-		
+<div class="center jumbotron home-description">
+
+  <p>
+  	The JS-Challenge Framework is a platform in Rails that serves as a visual version control system with automated suggestions on how to improve submitted JavaScript code. The system will provide basic functionality upon submission, such as the ability to create a user account, save/edit code, and receive automated advice on how to improve the code. Improvements will be based on a list of parameter set by the user, including a white list, black list, and an enforced structure hierarchy. Using the JavaScript parser Acorn, we parse out an AST (abstract syntax tree) from  valid JavaScript code the user submits. Our APIs traverse the tree giving suggestions based on the set lists and structures the user has provided after sigining in. The final product will be deployed live on Heroku.
+
+	In the future we envision an app of this nature being used beside a service such as HackerRank. The interviewer could set restrictions in the white list and black list (such as enforcing the presence of a for loop and restricting while loops) and have the final code graded not only on the output, but also on the efficiency, run time, and cleverness!
+
+</p>
+
 </div>
-
-
