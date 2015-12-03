@@ -11,11 +11,10 @@ In the future we envision an app of this nature being used beside a service such
 
 Aaron
 ====
-What needs to be done:
-create a model for users to save past code
-allow them to choose code they wrote and submitted in the past
-let them load this code up into codemirror (the text editor)
-then we just need to clean up the css and HTML
+1. create a model for users to save past code
+2. allow them to choose code they wrote and submitted in the past
+3. let them load this code up into codemirror (the text editor)
+4. then we just need to clean up the css and HTML
 
 
 Nancy
