@@ -8,11 +8,6 @@ The JS-Challenge Framework is a platform in Rails that serves as a visual versio
 In the future we envision an app of this nature being used beside a service such as HackerRank. The interviewer could set restrictions in the white list and black list (such as enforcing the presence of a for loop and restricting while loops) and have the final code graded not only on the output, but also on the efficiency, run time, and cleverness!
 	
 	
-	
-LIVE DEPLOY
-===
-https://js-challenge-framework.herokuapp.com/
-	
 
 Aaron
 ====
