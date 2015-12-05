@@ -21964,3 +21964,34 @@ Started GET "/assets/application.self-dc1a6706a4479972e298448e1d6b188dce72434bef
   [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150816221727')[0m
   [1m[35m (0.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150816223455')
   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for ::1 at 2015-12-05 04:33:05 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (166.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (12.3ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 391ms (Views: 380.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/team" for ::1 at 2015-12-05 04:33:08 -0500
+Processing by StaticPagesController#team as HTML
+  Rendered static_pages/team.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 172ms (Views: 171.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-12-05 04:33:12 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 108ms (Views: 107.0ms | ActiveRecord: 0.2ms)

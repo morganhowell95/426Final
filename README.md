@@ -10,3 +10,8 @@ In the future we envision an app of this nature being used beside a service such
 
 ****NOTE:
 This project is not yet completely finished, we are currently implementing the ability for users to save submitted code so they can load past code into the challenge console, via the API, for analysis. The current implementation does fulfill all the required aspects of the COMP426 final project rubric. 
+
+Codiad would not allow us to upload every file and directory, so we decided to include the most important files. Namely the contollers, HTML, CSS, JavaScript, ORM, migrations, routes, and GemFile.
+We've also deployed the project live at:
+
+https://js-challenge-framework.herokuapp.com
