@@ -21,9 +21,6 @@
 
 
 //JavaScript code for the challenge platform
-
-
-
 $(document).ready( function(){
 	//instance that represents codemirror text editor
 	var editor = CodeMirror.fromTextArea($('#editor')[0], {

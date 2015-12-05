@@ -7,19 +7,6 @@ The JS-Challenge Framework is a platform in Rails that serves as a visual versio
 
 In the future we envision an app of this nature being used beside a service such as HackerRank. The interviewer could set restrictions in the white list and black list (such as enforcing the presence of a for loop and restricting while loops) and have the final code graded not only on the output, but also on the efficiency, run time, and cleverness!
 	
-	
 
-Aaron
-====
-1. create a model for users to save past code
-2. allow them to choose code they wrote and submitted in the past
-3. let them load this code up into codemirror (the text editor)
-4. then we just need to clean up the css and HTML
-
-
-Nancy
-====
-
-CSS once user logs in looks janky since I reformatted it.
-Fix up the css on the editor page (right after user logs in) to look a bit cleaner.
-For instance the console title is not aligned and all the divs are misaligned.
+****NOTE:
+This project is not yet completely finished, we are currently implementing the ability for users to save submitted code so they can load past code into the challenge console, via the API, for analysis. The current implementation does fulfill all the required aspects of the COMP426 final project rubric. 

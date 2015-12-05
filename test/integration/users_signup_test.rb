@@ -1,9 +1,7 @@
 require 'test_helper'
 
 class UsersSignupTest < ActionDispatch::IntegrationTest
-  # test "the truth" do
-  #   assert true
-  # end
+
 
   test "invalid submissions in signup" do
     assert_no_difference 'User.count' do
