@@ -136,7 +136,7 @@ input {
 
 aside {
   section.user_info {
-    margin-top: 20px;
+    margin-top: -100px;
   }
   section {
     padding: 10px 0;
@@ -163,6 +163,8 @@ aside {
 .gravatar {
   float: left;
   margin-right: 10px;
+  margin-top: 3px;
+  margin-bottom: 20px;
 }
 
 .gravatar_edit {
@@ -201,7 +203,9 @@ aside {
   @include box_sizing;
 }
 
-
+#sign-up {
+  margin-left: 380px;
+}
 
 /*
 Styling for the actual javascript challenge framework where users can set a hierachy along with certain key 
@@ -236,7 +240,7 @@ word restrictions
 
 .alert
 {
-  margin-top: -130px;
+  margin-top: 0px;
 }
 
 .pass-desc
@@ -348,7 +352,7 @@ word restrictions
   {
     float: left;
     text-align: left;
-    margin-left: -35px;
+    margin-left: -5px;
     margin-bottom: 50px;
     padding: 0;
     margin-top: -50px;
@@ -358,7 +362,7 @@ word restrictions
   {
 
     height: 100px;
-    margin-left: 200px;
+    margin-left: 40px;
     padding-top: -50px;
     margin-top: -50px;
 
@@ -383,8 +387,8 @@ word restrictions
       z-index: 100;
       float: left;
       left: 0;
-      margin-left: -234px;
-      margin-top: 20px;
+      margin-left: -75px;
+      margin-top: 26px;
     }
   }
 }
