@@ -218,7 +218,6 @@ $(document).ready( function(){
 			var current_code = editor.getValue();
 			var ast = acorn.parse(current_code);
 			var tree = JSON.stringify(ast);
-			console.log(ast);
 
 			//AJAX request to our APIs where we return a response that represents suggestions for
 			//user submitted JavaScript, depends on state of lists and hierarchy maker
@@ -252,4 +251,26 @@ $(document).ready( function(){
 		clearTimeout(timer);
 		timer = setTimeout(request_analysis, 1000)
 	});
+
+
+	$('#save-code').on("click", function(){
+				var current_code = editor.getValue();
+				var jqxhr = $.post( "/usercodes",
+				{
+					code: current_code
+				})
+				.done(function(resp) {
+				})
+				.fail(function(resp) {
+				})
+				.always(function(resp) {
+					//pass
+				});
+	})
+
+
+
 } );
+
+
+

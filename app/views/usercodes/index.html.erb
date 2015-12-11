@@ -1,0 +1,15 @@
+<% @usercodes.each do |repo| %>
+
+
+<div id="code-saved" class=" row container ">
+
+  
+  <h3> Repo ID: <%= repo.id %></h3>
+  <div id="code">
+  <p> <%= repo.code %></p>
+  </div>
+ 
+</div>
+
+
+<% end %>
