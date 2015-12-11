@@ -26277,3 +26277,613 @@ Processing by StaticPagesController#team as HTML
   Rendered layouts/_footer.html.erb (0.4ms)
 Completed 200 OK in 117ms (Views: 116.1ms | ActiveRecord: 0.1ms)
 
+
+
+Started GET "/users/3" for ::1 at 2015-12-11 14:33:49 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered users/show.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_header.html.erb (2.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 2456ms (Views: 2419.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/custom.self-6c4999fe8b2e9b653ab9144fc2b812bbf33058fbe026875840c8b779e4f7b79e.css?body=1" for ::1 at 2015-12-11 14:33:52 -0500
+
+
+Started GET "/assets/usercodes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-12-11 14:33:52 -0500
+
+
+Started GET "/assets/codemirror.self-ad46b7c60257f57968b51ce996b9d3aee0126d124e88b581a667751da08a5bb2.css?body=1" for ::1 at 2015-12-11 14:33:52 -0500
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for ::1 at 2015-12-11 14:33:52 -0500
+
+
+Started GET "/assets/scaffolds.self-b072a8c8a00100bca5809fb8bfa044630988fa9530f680c28097c1b94c459222.css?body=1" for ::1 at 2015-12-11 14:33:52 -0500
+
+
+Started GET "/assets/codemirror/themes/night.self-ee5455537171c8a94c5b26ccb444955eb0cf47af9a11842b7f1db4907dff7e80.css?body=1" for ::1 at 2015-12-11 14:33:52 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-12-11 14:33:52 -0500
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-12-11 14:33:52 -0500
+
+
+Started GET "/assets/bootstrap.self-cdea7efeac1597b89ddd6fd86b0e8e0bec5d5fb1fac9c6e8a045f2c59eef2d13.js?body=1" for ::1 at 2015-12-11 14:33:52 -0500
+
+
+Started GET "/assets/codemirror.self-b0c7f6f666573dfc3c2e8cc2d1aab479ffba1bfe33b8e51467f056f855d71ba3.js?body=1" for ::1 at 2015-12-11 14:33:52 -0500
+
+
+Started GET "/assets/usercodes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-12-11 14:33:52 -0500
+
+
+Started GET "/assets/codemirror/modes/javascript.self-cb559c50c1196c96becf41feda7f1609fd4a6c2f01bb440b4d18c9c3e55cc040.js?body=1" for ::1 at 2015-12-11 14:33:52 -0500
+
+
+Started GET "/assets/application.self-2b478d7f42cd56180e905910f3a4d14cd0633e7782ed6fcfb7c8e2b7cdb88022.js?body=1" for ::1 at 2015-12-11 14:33:52 -0500
+
+
+Started GET "/assets/acorn/dist/acorn.self-82a7103a5517565a32ccc73cc820d7c8b647f4f9089821b9f24b2c4bd4a5cf9e.js?body=1" for ::1 at 2015-12-11 14:33:52 -0500
+
+
+Started POST "/check_js_code" for ::1 at 2015-12-11 14:34:23 -0500
+Processing by StaticPagesController#check_js_code as */*
+  Parameters: {"user_code"=>"{\"type\":\"Program\",\"start\":0,\"end\":65,\"body\":[{\"type\":\"FunctionDeclaration\",\"start\":2,\"end\":65,\"id\":{\"type\":\"Identifier\",\"start\":11,\"end\":16,\"name\":\"hello\"},\"params\":[],\"body\":{\"type\":\"BlockStatement\",\"start\":18,\"end\":65,\"body\":[{\"type\":\"ExpressionStatement\",\"start\":29,\"end\":56,\"expression\":{\"type\":\"CallExpression\",\"start\":29,\"end\":55,\"callee\":{\"type\":\"MemberExpression\",\"start\":29,\"end\":40,\"object\":{\"type\":\"Identifier\",\"start\":29,\"end\":36,\"name\":\"console\"},\"property\":{\"type\":\"Identifier\",\"start\":37,\"end\":40,\"name\":\"log\"},\"computed\":false},\"arguments\":[{\"type\":\"Literal\",\"start\":41,\"end\":54,\"value\":\"hi nancy!!!\",\"raw\":\"\\\"hi nancy!!!\\\"\"}]}}]},\"expression\":false}]}", "white_list"=>"[]", "black_list"=>"[]", "structure"=>"[\"*\"]"}
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usercodes" for ::1 at 2015-12-11 14:34:26 -0500
+Processing by UsercodesController#create as */*
+  Parameters: {"code"=>"  function hello(){\n    \n    console.log(\"hi nancy!!!\");\n    \n  }"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "usercodes" ("code", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["code", "  function hello(){\n    \n    console.log(\"hi nancy!!!\");\n    \n  }"], ["user_id", 3], ["created_at", "2015-12-11 19:34:26.079864"], ["updated_at", "2015-12-11 19:34:26.079864"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/usercodes/6
+Completed 302 Found in 22ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/usercodes/6" for ::1 at 2015-12-11 14:34:26 -0500
+Processing by UsercodesController#show as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mUsercode Load (0.3ms)[0m  [1mSELECT  "usercodes".* FROM "usercodes" WHERE "usercodes"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered usercodes/show.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 188ms (Views: 185.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/usercodes" for ::1 at 2015-12-11 14:34:28 -0500
+Processing by UsercodesController#index as HTML
+  [1m[36mUsercode Load (0.2ms)[0m  [1mSELECT "usercodes".* FROM "usercodes" WHERE (3)[0m
+  Rendered usercodes/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 118ms (Views: 117.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/usercodes" for ::1 at 2015-12-11 14:34:59 -0500
+Processing by UsercodesController#index as HTML
+  [1m[36mUsercode Load (0.4ms)[0m  [1mSELECT "usercodes".* FROM "usercodes" WHERE (3)[0m
+  Rendered usercodes/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 2083ms (Views: 2080.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/scaffolds.self-b072a8c8a00100bca5809fb8bfa044630988fa9530f680c28097c1b94c459222.css?body=1" for ::1 at 2015-12-11 14:35:01 -0500
+
+
+Started GET "/assets/usercodes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-12-11 14:35:01 -0500
+
+
+Started GET "/assets/custom.self-c85f4d7efc2a0f8f58de24e97b0f3166f08b60b5e54fb47e6c085234856d9231.css?body=1" for ::1 at 2015-12-11 14:35:01 -0500
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for ::1 at 2015-12-11 14:35:01 -0500
+
+
+Started GET "/assets/codemirror.self-ad46b7c60257f57968b51ce996b9d3aee0126d124e88b581a667751da08a5bb2.css?body=1" for ::1 at 2015-12-11 14:35:01 -0500
+
+
+Started GET "/assets/codemirror/themes/night.self-ee5455537171c8a94c5b26ccb444955eb0cf47af9a11842b7f1db4907dff7e80.css?body=1" for ::1 at 2015-12-11 14:35:01 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-12-11 14:35:01 -0500
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-12-11 14:35:01 -0500
+
+
+Started GET "/assets/bootstrap.self-cdea7efeac1597b89ddd6fd86b0e8e0bec5d5fb1fac9c6e8a045f2c59eef2d13.js?body=1" for ::1 at 2015-12-11 14:35:01 -0500
+
+
+Started GET "/assets/codemirror.self-b0c7f6f666573dfc3c2e8cc2d1aab479ffba1bfe33b8e51467f056f855d71ba3.js?body=1" for ::1 at 2015-12-11 14:35:01 -0500
+
+
+Started GET "/assets/application.self-2b478d7f42cd56180e905910f3a4d14cd0633e7782ed6fcfb7c8e2b7cdb88022.js?body=1" for ::1 at 2015-12-11 14:35:01 -0500
+
+
+Started GET "/assets/usercodes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-12-11 14:35:01 -0500
+
+
+Started GET "/assets/codemirror/modes/javascript.self-cb559c50c1196c96becf41feda7f1609fd4a6c2f01bb440b4d18c9c3e55cc040.js?body=1" for ::1 at 2015-12-11 14:35:01 -0500
+
+
+Started GET "/assets/acorn/dist/acorn.self-82a7103a5517565a32ccc73cc820d7c8b647f4f9089821b9f24b2c4bd4a5cf9e.js?body=1" for ::1 at 2015-12-11 14:35:01 -0500
+
+
+Started GET "/" for ::1 at 2015-12-11 14:45:47 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (35.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_header.html.erb (13.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 684ms (Views: 667.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2015-12-11 14:45:48 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 137ms (Views: 136.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/3" for ::1 at 2015-12-11 14:45:53 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 120ms (Views: 118.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/usercodes" for ::1 at 2015-12-11 14:46:00 -0500
+Processing by UsercodesController#index as HTML
+  [1m[36mUsercode Load (0.2ms)[0m  [1mSELECT  "usercodes".* FROM "usercodes" WHERE "usercodes"."user_id" = ? LIMIT 1[0m  [["user_id", 3]]
+  Rendered usercodes/index.html.erb within layouts/application (7.6ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.6ms)
+
+NoMethodError (undefined method `each' for #<Usercode:0x007f9b8d5b26f8>):
+  app/views/usercodes/index.html.erb:1:in `_app_views_usercodes_index_html_erb___743442188021671958_70153011302180'
+
+
+  Rendered /Users/mjhowell/.rvm/gems/ruby-2.1.3/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (6.6ms)
+  Rendered /Users/mjhowell/.rvm/gems/ruby-2.1.3/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /Users/mjhowell/.rvm/gems/ruby-2.1.3/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Users/mjhowell/.rvm/gems/ruby-2.1.3/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
+  Rendered /Users/mjhowell/.rvm/gems/ruby-2.1.3/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (39.7ms)
+
+
+Started POST "/usercodes" for ::1 at 2015-12-11 14:46:50 -0500
+Processing by UsercodesController#create as */*
+  Parameters: {"code"=>"  \n  wefwerfw"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "usercodes" ("code", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["code", "  \n  wefwerfw"], ["user_id", 3], ["created_at", "2015-12-11 19:46:50.642906"], ["updated_at", "2015-12-11 19:46:50.642906"]]
+  [1m[35m (6.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/usercodes/7
+Completed 302 Found in 13ms (ActiveRecord: 7.7ms)
+
+
+Started GET "/usercodes/7" for ::1 at 2015-12-11 14:46:50 -0500
+Processing by UsercodesController#show as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mUsercode Load (0.2ms)[0m  [1mSELECT  "usercodes".* FROM "usercodes" WHERE "usercodes"."id" = ? LIMIT 1[0m  [["id", 7]]
+  Rendered usercodes/show.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered layouts/_header.html.erb (11.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 259ms (Views: 257.0ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/check_js_code" for ::1 at 2015-12-11 14:46:51 -0500
+Processing by StaticPagesController#check_js_code as */*
+  Parameters: {"user_code"=>"{\"type\":\"Program\",\"start\":0,\"end\":13,\"body\":[{\"type\":\"ExpressionStatement\",\"start\":5,\"end\":13,\"expression\":{\"type\":\"Identifier\",\"start\":5,\"end\":13,\"name\":\"wefwerfw\"}}]}", "white_list"=>"[]", "black_list"=>"[]", "structure"=>"[\"*\"]"}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usercodes" for ::1 at 2015-12-11 14:46:53 -0500
+Processing by UsercodesController#create as */*
+  Parameters: {"code"=>"  \n  wefwerfw\n  \n  werwf"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "usercodes" ("code", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["code", "  \n  wefwerfw\n  \n  werwf"], ["user_id", 3], ["created_at", "2015-12-11 19:46:53.588683"], ["updated_at", "2015-12-11 19:46:53.588683"]]
+  [1m[36m (7.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/usercodes/8
+Completed 302 Found in 13ms (ActiveRecord: 8.2ms)
+
+
+Started GET "/usercodes/8" for ::1 at 2015-12-11 14:46:53 -0500
+Processing by UsercodesController#show as */*
+  Parameters: {"id"=>"8"}
+  [1m[35mUsercode Load (0.2ms)[0m  SELECT  "usercodes".* FROM "usercodes" WHERE "usercodes"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered usercodes/show.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 174ms (Views: 172.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/check_js_code" for ::1 at 2015-12-11 14:46:53 -0500
+Processing by StaticPagesController#check_js_code as */*
+  Parameters: {"user_code"=>"{\"type\":\"Program\",\"start\":0,\"end\":24,\"body\":[{\"type\":\"ExpressionStatement\",\"start\":5,\"end\":13,\"expression\":{\"type\":\"Identifier\",\"start\":5,\"end\":13,\"name\":\"wefwerfw\"}},{\"type\":\"ExpressionStatement\",\"start\":19,\"end\":24,\"expression\":{\"type\":\"Identifier\",\"start\":19,\"end\":24,\"name\":\"werwf\"}}]}", "white_list"=>"[]", "black_list"=>"[]", "structure"=>"[\"*\"]"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/usercodes" for ::1 at 2015-12-11 14:46:56 -0500
+Processing by UsercodesController#create as */*
+  Parameters: {"code"=>"  \n  wefwerfw\n  \n  werwf\n  \n  werfwer"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "usercodes" ("code", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["code", "  \n  wefwerfw\n  \n  werwf\n  \n  werfwer"], ["user_id", 3], ["created_at", "2015-12-11 19:46:56.829701"], ["updated_at", "2015-12-11 19:46:56.829701"]]
+  [1m[35m (7.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/usercodes/9
+Completed 302 Found in 11ms (ActiveRecord: 7.5ms)
+
+
+Started GET "/usercodes/9" for ::1 at 2015-12-11 14:46:56 -0500
+Processing by UsercodesController#show as */*
+  Parameters: {"id"=>"9"}
+  [1m[36mUsercode Load (0.1ms)[0m  [1mSELECT  "usercodes".* FROM "usercodes" WHERE "usercodes"."id" = ? LIMIT 1[0m  [["id", 9]]
+  Rendered usercodes/show.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 149ms (Views: 147.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/check_js_code" for ::1 at 2015-12-11 14:46:57 -0500
+Processing by StaticPagesController#check_js_code as */*
+  Parameters: {"user_code"=>"{\"type\":\"Program\",\"start\":0,\"end\":37,\"body\":[{\"type\":\"ExpressionStatement\",\"start\":5,\"end\":13,\"expression\":{\"type\":\"Identifier\",\"start\":5,\"end\":13,\"name\":\"wefwerfw\"}},{\"type\":\"ExpressionStatement\",\"start\":19,\"end\":24,\"expression\":{\"type\":\"Identifier\",\"start\":19,\"end\":24,\"name\":\"werwf\"}},{\"type\":\"ExpressionStatement\",\"start\":30,\"end\":37,\"expression\":{\"type\":\"Identifier\",\"start\":30,\"end\":37,\"name\":\"werfwer\"}}]}", "white_list"=>"[]", "black_list"=>"[]", "structure"=>"[\"*\"]"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/usercodes" for ::1 at 2015-12-11 14:47:00 -0500
+Processing by UsercodesController#index as HTML
+  [1m[36mUsercode Load (0.1ms)[0m  [1mSELECT  "usercodes".* FROM "usercodes" WHERE "usercodes"."user_id" = ? LIMIT 1[0m  [["user_id", 3]]
+  Rendered usercodes/index.html.erb within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.1ms)
+
+NoMethodError (undefined method `each' for #<Usercode:0x007f9b87155ac0>):
+  app/views/usercodes/index.html.erb:1:in `_app_views_usercodes_index_html_erb___743442188021671958_70153011302180'
+
+
+  Rendered /Users/mjhowell/.rvm/gems/ruby-2.1.3/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_source.erb (8.5ms)
+  Rendered /Users/mjhowell/.rvm/gems/ruby-2.1.3/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/mjhowell/.rvm/gems/ruby-2.1.3/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/mjhowell/.rvm/gems/ruby-2.1.3/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/_web_console.html.erb (2.2ms)
+  Rendered /Users/mjhowell/.rvm/gems/ruby-2.1.3/gems/web-console-2.0.0.beta3/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (33.0ms)
+
+
+Started GET "/usercodes" for ::1 at 2015-12-11 14:48:45 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsercodesController#index as HTML
+  [1m[35mUsercode Load (0.3ms)[0m  SELECT "usercodes".* FROM "usercodes" WHERE "usercodes"."user_id" = ?  [["user_id", 3]]
+  Rendered usercodes/index.html.erb within layouts/application (11.2ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_header.html.erb (15.8ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 477ms (Views: 453.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/custom.self-c85f4d7efc2a0f8f58de24e97b0f3166f08b60b5e54fb47e6c085234856d9231.css?body=1" for ::1 at 2015-12-11 14:48:46 -0500
+
+
+Started GET "/assets/scaffolds.self-b072a8c8a00100bca5809fb8bfa044630988fa9530f680c28097c1b94c459222.css?body=1" for ::1 at 2015-12-11 14:48:46 -0500
+
+
+Started GET "/assets/usercodes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-12-11 14:48:46 -0500
+
+
+Started GET "/assets/codemirror.self-ad46b7c60257f57968b51ce996b9d3aee0126d124e88b581a667751da08a5bb2.css?body=1" for ::1 at 2015-12-11 14:48:46 -0500
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for ::1 at 2015-12-11 14:48:46 -0500
+
+
+Started GET "/assets/codemirror/themes/night.self-ee5455537171c8a94c5b26ccb444955eb0cf47af9a11842b7f1db4907dff7e80.css?body=1" for ::1 at 2015-12-11 14:48:46 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-12-11 14:48:46 -0500
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-12-11 14:48:46 -0500
+
+
+Started GET "/assets/bootstrap.self-cdea7efeac1597b89ddd6fd86b0e8e0bec5d5fb1fac9c6e8a045f2c59eef2d13.js?body=1" for ::1 at 2015-12-11 14:48:46 -0500
+
+
+Started GET "/assets/usercodes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-12-11 14:48:46 -0500
+
+
+Started GET "/assets/codemirror.self-b0c7f6f666573dfc3c2e8cc2d1aab479ffba1bfe33b8e51467f056f855d71ba3.js?body=1" for ::1 at 2015-12-11 14:48:46 -0500
+
+
+Started GET "/assets/codemirror/modes/javascript.self-cb559c50c1196c96becf41feda7f1609fd4a6c2f01bb440b4d18c9c3e55cc040.js?body=1" for ::1 at 2015-12-11 14:48:46 -0500
+
+
+Started GET "/assets/acorn/dist/acorn.self-82a7103a5517565a32ccc73cc820d7c8b647f4f9089821b9f24b2c4bd4a5cf9e.js?body=1" for ::1 at 2015-12-11 14:48:46 -0500
+
+
+Started GET "/assets/application.self-2b478d7f42cd56180e905910f3a4d14cd0633e7782ed6fcfb7c8e2b7cdb88022.js?body=1" for ::1 at 2015-12-11 14:48:46 -0500
+
+
+Started GET "/" for ::1 at 2015-12-11 14:48:50 -0500
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 130ms (Views: 129.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/signup" for ::1 at 2015-12-11 14:48:54 -0500
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (3.7ms)
+  Rendered users/new.html.erb within layouts/application (357.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered layouts/_header.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 480ms (Views: 478.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users" for ::1 at 2015-12-11 14:49:09 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"r6S/i0dlbodj0rMITsti+mQzru4nCTWLQXqlLIZMJ/gFRDhICSl7yJ89suzC6u6tQWWpkHc6wlnybeKLmBpbkg==", "user"=>{"name"=>"Morgan", "email"=>"mjhowell@555.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('mjhowell@555.com') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Morgan"], ["email", "mjhowell@555.com"], ["password_digest", "$2a$10$pKrnVDpMNqhNOee2Q/882OaHfmAdjlclATlkSsuJ53h3kLiOJ3/tq"], ["created_at", "2015-12-11 19:49:10.063664"], ["updated_at", "2015-12-11 19:49:10.063664"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/4
+Completed 302 Found in 98ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/users/4" for ::1 at 2015-12-11 14:49:10 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered users/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 182ms (Views: 179.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/usercodes" for ::1 at 2015-12-11 14:49:19 -0500
+Processing by UsercodesController#index as HTML
+  [1m[35mUsercode Load (0.1ms)[0m  SELECT "usercodes".* FROM "usercodes" WHERE "usercodes"."user_id" = ?  [["user_id", 4]]
+  Rendered usercodes/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 123ms (Views: 121.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/4" for ::1 at 2015-12-11 14:49:25 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered users/show.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 113ms (Views: 111.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/usercodes" for ::1 at 2015-12-11 14:50:04 -0500
+Processing by UsercodesController#create as */*
+  Parameters: {"code"=>"  \n  function(){\n    \n   console.log(\"hello\"); \n    \n  }"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "usercodes" ("code", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["code", "  \n  function(){\n    \n   console.log(\"hello\"); \n    \n  }"], ["user_id", 4], ["created_at", "2015-12-11 19:50:04.384090"], ["updated_at", "2015-12-11 19:50:04.384090"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/usercodes/10
+Completed 302 Found in 8ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/usercodes/10" for ::1 at 2015-12-11 14:50:04 -0500
+Processing by UsercodesController#show as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mUsercode Load (0.2ms)[0m  [1mSELECT  "usercodes".* FROM "usercodes" WHERE "usercodes"."id" = ? LIMIT 1[0m  [["id", 10]]
+  Rendered usercodes/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 144ms (Views: 141.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/usercodes" for ::1 at 2015-12-11 14:50:07 -0500
+Processing by UsercodesController#index as HTML
+  [1m[36mUsercode Load (0.1ms)[0m  [1mSELECT "usercodes".* FROM "usercodes" WHERE "usercodes"."user_id" = ?[0m  [["user_id", 4]]
+  Rendered usercodes/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 132ms (Views: 130.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/usercodes" for ::1 at 2015-12-11 14:51:19 -0500
+Processing by UsercodesController#index as HTML
+  [1m[36mUsercode Load (0.1ms)[0m  [1mSELECT "usercodes".* FROM "usercodes" WHERE "usercodes"."user_id" = ?[0m  [["user_id", 4]]
+  Rendered usercodes/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 141ms (Views: 139.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/custom.self-c85f4d7efc2a0f8f58de24e97b0f3166f08b60b5e54fb47e6c085234856d9231.css?body=1" for ::1 at 2015-12-11 14:51:19 -0500
+
+
+Started GET "/assets/scaffolds.self-b072a8c8a00100bca5809fb8bfa044630988fa9530f680c28097c1b94c459222.css?body=1" for ::1 at 2015-12-11 14:51:19 -0500
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for ::1 at 2015-12-11 14:51:19 -0500
+
+
+Started GET "/assets/codemirror.self-ad46b7c60257f57968b51ce996b9d3aee0126d124e88b581a667751da08a5bb2.css?body=1" for ::1 at 2015-12-11 14:51:19 -0500
+
+
+Started GET "/assets/bootstrap.self-cdea7efeac1597b89ddd6fd86b0e8e0bec5d5fb1fac9c6e8a045f2c59eef2d13.js?body=1" for ::1 at 2015-12-11 14:51:19 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-12-11 14:51:19 -0500
+
+
+Started GET "/assets/codemirror/themes/night.self-ee5455537171c8a94c5b26ccb444955eb0cf47af9a11842b7f1db4907dff7e80.css?body=1" for ::1 at 2015-12-11 14:51:19 -0500
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-12-11 14:51:19 -0500
+
+
+Started GET "/assets/usercodes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-12-11 14:51:19 -0500
+
+
+Started GET "/assets/usercodes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-12-11 14:51:19 -0500
+
+
+Started GET "/assets/codemirror.self-b0c7f6f666573dfc3c2e8cc2d1aab479ffba1bfe33b8e51467f056f855d71ba3.js?body=1" for ::1 at 2015-12-11 14:51:19 -0500
+
+
+Started GET "/assets/codemirror/modes/javascript.self-cb559c50c1196c96becf41feda7f1609fd4a6c2f01bb440b4d18c9c3e55cc040.js?body=1" for ::1 at 2015-12-11 14:51:19 -0500
+
+
+Started GET "/assets/acorn/dist/acorn.self-82a7103a5517565a32ccc73cc820d7c8b647f4f9089821b9f24b2c4bd4a5cf9e.js?body=1" for ::1 at 2015-12-11 14:51:19 -0500
+
+
+Started GET "/assets/application.self-2b478d7f42cd56180e905910f3a4d14cd0633e7782ed6fcfb7c8e2b7cdb88022.js?body=1" for ::1 at 2015-12-11 14:51:19 -0500
+
+
+Started GET "/usercodes" for ::1 at 2015-12-11 14:52:45 -0500
+Processing by UsercodesController#index as HTML
+  [1m[36mUsercode Load (0.2ms)[0m  [1mSELECT "usercodes".* FROM "usercodes" WHERE "usercodes"."user_id" = ?[0m  [["user_id", 4]]
+  Rendered usercodes/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 128ms (Views: 126.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/custom.self-c85f4d7efc2a0f8f58de24e97b0f3166f08b60b5e54fb47e6c085234856d9231.css?body=1" for ::1 at 2015-12-11 14:52:45 -0500
+
+
+Started GET "/assets/scaffolds.self-b072a8c8a00100bca5809fb8bfa044630988fa9530f680c28097c1b94c459222.css?body=1" for ::1 at 2015-12-11 14:52:45 -0500
+
+
+Started GET "/assets/codemirror.self-ad46b7c60257f57968b51ce996b9d3aee0126d124e88b581a667751da08a5bb2.css?body=1" for ::1 at 2015-12-11 14:52:45 -0500
+
+
+Started GET "/assets/usercodes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-12-11 14:52:45 -0500
+
+
+Started GET "/assets/bootstrap.self-cdea7efeac1597b89ddd6fd86b0e8e0bec5d5fb1fac9c6e8a045f2c59eef2d13.js?body=1" for ::1 at 2015-12-11 14:52:45 -0500
+
+
+Started GET "/assets/codemirror/themes/night.self-ee5455537171c8a94c5b26ccb444955eb0cf47af9a11842b7f1db4907dff7e80.css?body=1" for ::1 at 2015-12-11 14:52:45 -0500
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-12-11 14:52:45 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-12-11 14:52:45 -0500
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for ::1 at 2015-12-11 14:52:45 -0500
+
+
+Started GET "/assets/usercodes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-12-11 14:52:45 -0500
+
+
+Started GET "/assets/codemirror.self-b0c7f6f666573dfc3c2e8cc2d1aab479ffba1bfe33b8e51467f056f855d71ba3.js?body=1" for ::1 at 2015-12-11 14:52:45 -0500
+
+
+Started GET "/assets/codemirror/modes/javascript.self-cb559c50c1196c96becf41feda7f1609fd4a6c2f01bb440b4d18c9c3e55cc040.js?body=1" for ::1 at 2015-12-11 14:52:45 -0500
+
+
+Started GET "/assets/acorn/dist/acorn.self-82a7103a5517565a32ccc73cc820d7c8b647f4f9089821b9f24b2c4bd4a5cf9e.js?body=1" for ::1 at 2015-12-11 14:52:45 -0500
+
+
+Started GET "/assets/application.self-2b478d7f42cd56180e905910f3a4d14cd0633e7782ed6fcfb7c8e2b7cdb88022.js?body=1" for ::1 at 2015-12-11 14:52:45 -0500
+
+
+Started GET "/usercodes" for ::1 at 2015-12-11 14:52:54 -0500
+Processing by UsercodesController#index as HTML
+  [1m[36mUsercode Load (0.2ms)[0m  [1mSELECT "usercodes".* FROM "usercodes" WHERE "usercodes"."user_id" = ?[0m  [["user_id", 4]]
+  Rendered usercodes/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 123ms (Views: 119.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/custom.self-c85f4d7efc2a0f8f58de24e97b0f3166f08b60b5e54fb47e6c085234856d9231.css?body=1" for ::1 at 2015-12-11 14:52:55 -0500
+
+
+Started GET "/assets/scaffolds.self-b072a8c8a00100bca5809fb8bfa044630988fa9530f680c28097c1b94c459222.css?body=1" for ::1 at 2015-12-11 14:52:55 -0500
+
+
+Started GET "/assets/usercodes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-12-11 14:52:55 -0500
+
+
+Started GET "/assets/codemirror.self-ad46b7c60257f57968b51ce996b9d3aee0126d124e88b581a667751da08a5bb2.css?body=1" for ::1 at 2015-12-11 14:52:55 -0500
+
+
+Started GET "/assets/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1" for ::1 at 2015-12-11 14:52:55 -0500
+
+
+Started GET "/assets/codemirror/themes/night.self-ee5455537171c8a94c5b26ccb444955eb0cf47af9a11842b7f1db4907dff7e80.css?body=1" for ::1 at 2015-12-11 14:52:55 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-12-11 14:52:55 -0500
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-12-11 14:52:55 -0500
+
+
+Started GET "/assets/bootstrap.self-cdea7efeac1597b89ddd6fd86b0e8e0bec5d5fb1fac9c6e8a045f2c59eef2d13.js?body=1" for ::1 at 2015-12-11 14:52:55 -0500
+
+
+Started GET "/assets/usercodes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-12-11 14:52:55 -0500
+
+
+Started GET "/assets/codemirror.self-b0c7f6f666573dfc3c2e8cc2d1aab479ffba1bfe33b8e51467f056f855d71ba3.js?body=1" for ::1 at 2015-12-11 14:52:55 -0500
+
+
+Started GET "/assets/codemirror/modes/javascript.self-cb559c50c1196c96becf41feda7f1609fd4a6c2f01bb440b4d18c9c3e55cc040.js?body=1" for ::1 at 2015-12-11 14:52:55 -0500
+
+
+Started GET "/assets/acorn/dist/acorn.self-82a7103a5517565a32ccc73cc820d7c8b647f4f9089821b9f24b2c4bd4a5cf9e.js?body=1" for ::1 at 2015-12-11 14:52:55 -0500
+
+
+Started GET "/assets/application.self-2b478d7f42cd56180e905910f3a4d14cd0633e7782ed6fcfb7c8e2b7cdb88022.js?body=1" for ::1 at 2015-12-11 14:52:55 -0500

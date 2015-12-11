@@ -1,13 +1,16 @@
-<% @usercodes.each do |repo| %>
+<%$i=1%>
+
+<% @usercodes.each do |repo, count| %>
 
 
 <div id="code-saved" class=" row container ">
 
   
-  <h3> Repo ID: <%= repo.id %></h3>
+  <h3> Repo ID: <%= $i %></h3>
   <div id="code">
   <p> <%= repo.code %></p>
   </div>
+  <% $i+=1 %>
  
 </div>
 
