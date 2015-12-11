@@ -4,7 +4,7 @@ class UsercodesController < ApplicationController
   # GET /usercodes
   # GET /usercodes.json
   def index
-    @usercodes = Usercode.where(user_id=session[:user_id])
+    @usercodes = Usercode.where(user_id: session[:user_id])
   end
 
   # GET /usercodes/1
