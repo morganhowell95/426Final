@@ -160,10 +160,15 @@ aside {
   }
 }
 
+.alert-success {
+  margin-top: 150px;
+}
+
+
 .gravatar {
   float: left;
   margin-right: 10px;
-  margin-top: 50px;
+  margin-top: 10px;
   margin-bottom: 18px;
 }
 
@@ -176,6 +181,12 @@ aside {
 {
   font-size: 12px;
   text-align: left;
+}
+
+.alert-success{
+  margin-top: 50px;
+  margin-bottom: 100px;
+
 }
 
 .clean-code
