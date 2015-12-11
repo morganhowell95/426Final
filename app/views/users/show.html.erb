@@ -5,7 +5,8 @@
     <section class="user_info">
       <h1>
         <%= gravatar_for @user %>
-        Hacker Name: <%= @user.name %><br>
+
+        <br> Hacker Name: <%= @user.name %><br>
         Hacker ID:<b> <%= session[:user_id] %></b>
       </h1>
     </section>
