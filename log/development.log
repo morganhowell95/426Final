@@ -26887,3 +26887,28 @@ Started GET "/assets/acorn/dist/acorn.self-82a7103a5517565a32ccc73cc820d7c8b647f
 
 
 Started GET "/assets/application.self-2b478d7f42cd56180e905910f3a4d14cd0633e7782ed6fcfb7c8e2b7cdb88022.js?body=1" for ::1 at 2015-12-11 14:52:55 -0500
+
+
+Started GET "/" for ::1 at 2015-12-11 14:58:11 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (126.9ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_header.html.erb (23.3ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 616ms (Views: 603.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-e4d4f3feb3b98f3b153b3090de7d14004dc4f1580f730702864b58526dd0ebea.js?body=1" for ::1 at 2015-12-11 14:58:12 -0500
+
+
+Started GET "/usercodes" for ::1 at 2015-12-11 14:58:14 -0500
+Processing by UsercodesController#index as HTML
+  [1m[36mUsercode Load (0.2ms)[0m  [1mSELECT "usercodes".* FROM "usercodes" WHERE "usercodes"."user_id" = ?[0m  [["user_id", 4]]
+  Rendered usercodes/index.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 194ms (Views: 178.4ms | ActiveRecord: 0.7ms)

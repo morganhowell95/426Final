@@ -260,6 +260,7 @@ $(document).ready( function(){
 					code: current_code
 				})
 				.done(function(resp) {
+					alert("Code Successfully Saved!");
 				})
 				.fail(function(resp) {
 				})
